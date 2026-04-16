@@ -124,3 +124,12 @@ void binarySearch()
         cin >> ulang;
     } while (ulang == 'y' || ulang == 'Y');
 }
+
+//membuat fungsi main untuk menjalankan program
+int main()
+{
+    input();
+    bubbleSortArray();
+    display();
+    binarySearch();
+}
