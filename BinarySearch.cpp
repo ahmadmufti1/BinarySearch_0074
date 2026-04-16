@@ -24,6 +24,15 @@ void input()
         }
     }
 
-   
-}
+    cout << "\n=================================\n";
+    cout << "      Masukkan elemen array      \n";
+    cout << "=================================\n";
 
+    //Membuat perulangan for untuk menginput data ke dalam array
+    for (int i = 0; i < nPanjang; i++)
+    {
+        cout << "Data ke-" << i + 1 << "= ";
+        cin >> element[i];
+    }
+
+}
