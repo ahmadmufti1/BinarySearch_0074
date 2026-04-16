@@ -77,3 +77,9 @@ void display()
     }
     cout << endl;
 }
+
+//membuat fungsi binasry search
+void binarySearch()
+{
+    
+}
