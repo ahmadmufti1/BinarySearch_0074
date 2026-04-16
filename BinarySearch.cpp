@@ -78,8 +78,49 @@ void display()
     cout << endl;
 }
 
-//membuat fungsi binasry search
+//membuat fungsi binary search
 void binarySearch()
 {
-    
+    //Membuat perulangan do-while untuk melakukan binary search pada array
+    char ulang;
+    do
+    {
+        cout << "\n===============================\n";
+        cout << "      Masukkan Binary Search      \n";
+        cout << "\n===============================\n";
+
+        cout << "Masukkan elemen yang ingin dicari: ";
+        cin >> x;
+        
+        int low = 0;
+        int high = nPanjang - 1;
+
+        do
+        { //Membuat variabel mid untuk menyimpan nilai tengah dari low dan high
+            int mid = (low + high) / 2;
+
+            if(element[mid] == x)
+            {
+                cout << "\n[✔️] Elemen " << x << "ditemukan pada indeks " << mid << "\n";
+                return;
+            }
+
+            if(x < element[mid])
+            {
+                high = mid -1;
+            }
+
+            if (x > element[mid])
+            {
+                low = mid + 1;
+            }
+        } while (low <= high);
+
+        if (low > high)
+        {
+            cout << "\n[❌] Elemen " << x << " tidak ditemukan dalam array.\n";
+        }
+        cout << "\nApakah Anda ingin mencari lagi? (y/n): ";
+        cin >> ulang;
+    } while (ulang == 'y' || ulang == 'Y');
 }
