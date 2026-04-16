@@ -57,3 +57,10 @@ void bubbleSortArray()
     }while (pass <= nPanjang - 1);
     
 }
+
+
+//Membuat fungsi display
+void display()
+{
+
+}
